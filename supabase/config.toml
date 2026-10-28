@@ -1,0 +1,22 @@
+project_id = "big-mama-ai-system"
+
+[api]
+port = 54321
+
+[functions.send-welcome-email]
+verify_jwt = true
+
+[functions.draft-ai-reply]
+verify_jwt = true
+
+[functions.stripe-checkout]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.twilio-sms-webhook]
+verify_jwt = false
+
+[functions.gmail-oauth]
+verify_jwt = true
